@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06ac667189.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- navbar -->
+        <nav class="navbar d-flex flex-row justify-content-between my-0 py-0">
+            <span class="navbar-brand mb-0 h1 p-0 ms-5">
+                <img src="http://shimmeringsoul.weebly.com/uploads/1/3/0/3/13031044/1-xkmi4fb5vws6-my7b22lza_1.png"
+                    class="img-fluid logo" alt="">
+            </span>
+            <!-- modal button -->
+            <!-- Button trigger modal -->
+            <div class="d-flex flex-row me-5">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    create a new post
+                </button>
+                <!-- dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <textarea class="w-100"></textarea>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="border border-dark p-1 icon me-1">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <div class="border border-dark p-1 icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- button section -->
+        <ul class="nav nav-pills bg-light b-flex justify-content-center" id="myTab" role="pillList">
+            <li class="nav-item my-2" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+                    role="pill" aria-controls="home" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+            </li>
+            <li class="nav-item my-2" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button"
+                    role="pill" aria-controls="profile" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
+            </li>
+
+        </ul>
+
+        <!-- view section -->
+        <div class="tab-content">
+            <!-- Grid view section -->
+            <div class="tab-pane active grid" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-4 pe-0">
+                        <img src="https://images.unsplash.com/photo-1651269121936-f015d38b58c0?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 px-0">
+                        <img src="https://images.unsplash.com/photo-1651188298167-c99db04ffdb0?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 ps-0">
+                        <img src="https://images.unsplash.com/photo-1652538893053-fe348c9a9440?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 pe-0">
+                        <img src="https://images.unsplash.com/photo-1651251679876-9fdf4a90e577?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 px-0">
+                        <img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 ps-0">
+                        <img src="https://images.unsplash.com/photo-1653396594966-76944b012d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 pe-0">
+                        <img src="https://images.unsplash.com/photo-1653257924069-dac9af08fdf6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 px-0">
+                        <img src="https://images.unsplash.com/photo-1653420723897-18897f9bbdfe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-4 ps-0">
+                        <img src="https://images.unsplash.com/photo-1653450283266-c788c2ca4ab2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- List view section -->
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="card my-5" style="width: 30rem;">
+                        <div class="d-flex justify-content-between m-2 align-items-center">
+                            <div>
+                                <p class="m-0">My first Photo</p>
+                            </div>
+                            <div>
+                                <p class="m-0">12/14</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1651269121936-f015d38b58c0?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p>23 likes</p>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purposes. I am learning to code with #BreatheCode</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row text-secondary">
+                                    <div class="ms-2 me-3"><i class="fa-regular fa-heart"></i></div>
+                                    <div>Comment...</div>
+                                </div>
+                                <div class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5" style="width: 30rem;">
+                        <div class="d-flex justify-content-between m-2 align-items-center">
+                            <div>
+                                <p class="m-0">My first Photo</p>
+                            </div>
+                            <div>
+                                <p class="m-0">12/14</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1653257924069-dac9af08fdf6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p>23 likes</p>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purposes. I am learning to code with #BreatheCode</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row text-secondary">
+                                    <div class="ms-2 me-3"><i class="fa-regular fa-heart"></i></div>
+                                    <div>Comment...</div>
+                                </div>
+                                <div class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5" style="width: 30rem;">
+                        <div class="d-flex justify-content-between m-2 align-items-center">
+                            <div>
+                                <p class="m-0">My first Photo</p>
+                            </div>
+                            <div>
+                                <p class="m-0">12/14</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1653450283266-c788c2ca4ab2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p>23 likes</p>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purposes. I am learning to code with #BreatheCode</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row text-secondary">
+                                    <div class="ms-2 me-3"><i class="fa-regular fa-heart"></i></div>
+                                    <div>Comment...</div>
+                                </div>
+                                <div class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5" style="width: 30rem;">
+                        <div class="d-flex justify-content-between m-2 align-items-center">
+                            <div>
+                                <p class="m-0">My first Photo</p>
+                            </div>
+                            <div>
+                                <p class="m-0">12/14</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1653396594966-76944b012d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p>23 likes</p>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purposes. I am learning to code with #BreatheCode</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row text-secondary">
+                                    <div class="ms-2 me-3"><i class="fa-regular fa-heart"></i></div>
+                                    <div>Comment...</div>
+                                </div>
+                                <div class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5" style="width: 30rem;">
+                        <div class="d-flex justify-content-between m-2 align-items-center">
+                            <div>
+                                <p class="m-0">My first Photo</p>
+                            </div>
+                            <div>
+                                <p class="m-0">12/14</p>
+                            </div>
+                        </div>
+                        <img class="card-img-top"
+                            src="https://images.unsplash.com/photo-1651188298167-c99db04ffdb0?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p>23 likes</p>
+                            <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                                testing purposes. I am learning to code with #BreatheCode</p>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-row text-secondary">
+                                    <div class="ms-2 me-3"><i class="fa-regular fa-heart"></i></div>
+                                    <div>Comment...</div>
+                                </div>
+                                <div class="text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
